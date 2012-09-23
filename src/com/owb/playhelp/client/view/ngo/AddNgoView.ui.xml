@@ -1,0 +1,52 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="../../resources/GlobalStyles.css" >
+	</ui:style>
+	<g:HTMLPanel>
+			<div class="{style.formTitle}">NGO Information</div>
+			<table>
+				<tr>
+					<td>Name:</td>
+					<td>
+						<g:TextBox ui:field='nameField'>YOUR ORGANIZATION NAME</g:TextBox>
+					</td>
+				</tr>
+				<tr>
+					<td>Description:</td>
+					<td>
+						<g:TextBox ui:field='descField'>Write a brief description of your organization</g:TextBox>
+					</td>
+				</tr>
+				<tr>
+					<td>Address:</td>
+					<td>
+						<g:TextBox ui:field='addressField'>ADDRESS OF YOUR ORGANIZATION</g:TextBox>
+					</td>
+				</tr>
+				<tr>
+					<td>Phone:</td>
+					<td>
+						<g:TextBox ui:field='phoneField'>COTANCT PHONE OF YOUR ORGANIZATION</g:TextBox>
+					</td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td>
+						<g:TextBox ui:field='emailField'>ORGANIZATIONCONTACTEMAIL@YOURURLORGANIZATION.org</g:TextBox>
+					</td>
+				</tr>
+				<tr>
+					<td>Website:</td>
+					<td>
+						<g:TextBox ui:field='webField'>http://www.YOURURLORGANIZATION.org/</g:TextBox>
+					</td>
+				</tr>
+			</table>
+		<div class='{style.button}'>
+			<g:Anchor href='javascript:;' ui:field='saveBut'>Save</g:Anchor>
+			<g:Anchor href='javascript:;' ui:field='cancelBut'>Cancel</g:Anchor>
+		</div>
+		<div ui:field='nameDiv' />
+	</g:HTMLPanel>
+</ui:UiBinder> 

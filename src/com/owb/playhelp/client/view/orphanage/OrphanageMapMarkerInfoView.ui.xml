@@ -1,0 +1,24 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="../../resources/GlobalStyles.css" >
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel ui:field="mainPanel">
+		Name: <g:Label ui:field="orphanageName" />
+		Description: <g:Label ui:field="orphanageDescription" />
+		Address: <g:Label ui:field="orphanageAddress" />
+		Phone:   <g:Label ui:field="orphanagePhone" />
+		Email:   <g:Label ui:field="orphanageEmail" />
+		<div class='{style.button}'>
+			<g:Anchor href='javascript:;' ui:field='editBut'>Edit</g:Anchor>
+			<g:Anchor href='javascript:;' ui:field='removeBut'>Remove</g:Anchor>
+			<g:Anchor href='javascript:;' ui:field='reportBut'>Report Abuse</g:Anchor>
+			<g:Anchor href='javascript:;' ui:field='followBut'>Follow</g:Anchor>
+			<g:Anchor href='javascript:;' ui:field='fulldescBut'>Full Description</g:Anchor>
+			<g:Anchor href='javascript:;' ui:field='addprojBut'>Add Project</g:Anchor>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

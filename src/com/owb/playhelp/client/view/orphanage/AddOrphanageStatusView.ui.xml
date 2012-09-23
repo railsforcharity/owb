@@ -1,0 +1,40 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="../../resources/GlobalStyles.css" >
+	</ui:style>
+	<g:HTMLPanel>
+			<div class="{style.formTitle}">Orphanage Status</div>
+			<table>
+				<tr>
+					<td></td>
+					<td>
+						<g:Label ui:field='nameField'>Orphanage Name</g:Label>
+					</td>
+				</tr>
+				<tr>
+					<td>Health (%):</td>
+					<td>
+						<g:TextBox ui:field='healthField'>100</g:TextBox>
+					</td>
+				</tr>
+				<tr>
+					<td>Education (%):</td>
+					<td>
+						<g:TextBox ui:field='educationField'>100</g:TextBox>
+					</td>
+				</tr>
+				<tr>
+					<td>Nutrition (%):</td>
+					<td>
+						<g:TextBox ui:field='nutritionField'>100</g:TextBox>
+					</td>
+				</tr>
+			</table>
+		<div class='{style.button}'>
+			<g:Anchor href='javascript:;' ui:field='saveBut'>Save</g:Anchor>
+			<g:Anchor href='javascript:;' ui:field='cancelBut'>Cancel</g:Anchor>
+		</div>
+		<div ui:field='nameDiv' />
+	</g:HTMLPanel>
+</ui:UiBinder> 

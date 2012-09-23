@@ -1,0 +1,72 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="../resources/GlobalStyles.css">	
+		.menuLink {
+			float: right;
+			margin-left: 10px;
+		}	
+		.important {
+			font-weight: bold;
+		}
+		.container {
+			width: 300px;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+	  <div class='{style.container}'>
+	  <div class="{style.titleBar}">MAIN MENU</div>
+	  <table align="right" border="1">
+		<tr><td>
+		  X
+		</td><td>
+		<div class='{style.menuLink}'>
+		    <g:Anchor href='javascript:;' ui:field='homeLink'>Home</g:Anchor>
+		</div>
+		</td></tr>
+		<tr><td>
+		  X
+		</td><td>
+		<div class='{style.menuLink}'>
+		    <g:Anchor href='javascript:;' ui:field='friendLink'>Friends</g:Anchor>
+		</div>
+		</td></tr>
+		<tr><td>
+		  X
+		</td><td>
+		<div class='{style.menuLink}'>
+		    <g:Anchor href='javascript:;' ui:field='projectLink'>Projects</g:Anchor>
+		</div>
+		</td></tr>
+		<tr><td>
+		  X
+		</td><td>
+		<div class='{style.menuLink}'>
+		    <g:Anchor href='javascript:;' ui:field='chapterLink'>Chapters</g:Anchor>
+		</div>
+		</td></tr>
+		<tr><td>
+		  X
+		</td><td>
+		<div class='{style.menuLink}'>
+		    <g:Anchor href='javascript:;' ui:field='ngoLink'>Non-Profits</g:Anchor>
+		</div>
+		</td></tr>
+		<tr><td>
+		  X
+		</td><td>
+		<div class='{style.menuLink}'>
+		    <g:Anchor href='javascript:;' ui:field='orphanageLink'>Orphanages</g:Anchor>
+		</div>
+		</td></tr>
+		<tr><td>
+		  X
+		</td><td>
+		<div class='{style.menuLink}'>
+		    <g:Anchor href='javascript:;' ui:field='moreLink'>More</g:Anchor>
+		</div>
+		</td></tr>
+	  </table>
+      </div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

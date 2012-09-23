@@ -1,0 +1,25 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="../resources/GlobalStyles.css">
+		.important {
+			font-weight: bold;
+		}
+		.loading {
+			width: 100%;
+			padding: 55px ;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<div class='{style.contentColumn}'>
+			<div class='{style.addFriendBox}'>
+				<g:Hyperlink styleName='{style.addElementListLink}' ui:field='addNew'>+add</g:Hyperlink>
+			</div>
+			<div class="{style.titleBar}">
+		    	<g:Label ui:field='titleReportField'>Report</g:Label>
+		    </div>
+			<g:Label ui:field='loadingLabel' styleName='{style.loading}'>Loading...</g:Label>
+			<g:FlexTable ui:field='listTable' />
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

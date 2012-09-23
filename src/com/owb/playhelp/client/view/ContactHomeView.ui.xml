@@ -1,0 +1,18 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<br/><br/>
+		<b>Orphanage Without Borders</b> <br/>
+		777 W. Middlefield Rd #166, Mountain View, CA 94043 <br/>
+		United States <br/>
+		 <br/>
+		<b>Phone</b>: 352-870-4212 <br/>
+		<b>Email</b>: owb@orphanagewithoutborders.org <br/>
+	</g:HTMLPanel>
+</ui:UiBinder> 

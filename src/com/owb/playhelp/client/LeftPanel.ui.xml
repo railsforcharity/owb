@@ -1,0 +1,32 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	
+    
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		.leftContainer {
+			padding: 0 11px;
+		}
+		.profileContainer {
+			float: right;
+			margin-top: 5px; 
+			width: 180px;
+			horizontalAlignment: "ALIGN_RIGHT";
+		}
+		.menuContainer {
+			float: right;
+			margin-top: 5px; 
+			width: 180px;
+			horizontalAlignment: "ALIGN_RIGHT";
+		}
+	</ui:style>
+	<g:HTMLPanel>
+						<g:VerticalPanel height='30px'/>
+						<g:VerticalPanel ui:field='profilePanel' />
+						<g:VerticalPanel ui:field='testPanel' height='150px'/>
+						<g:VerticalPanel ui:field='menuPanel'/>
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,33 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		.mainContainer {
+			padding: 0 11px;
+		}
+		.tabContainer {
+			background-color :   #21e339;
+		}
+		.profileContainer {
+			float: right;
+			margin-top: 5px; 
+			width: 300px;
+		}
+		.menuContainer {
+			float: right;
+			margin-top: 5px; 
+			width: 300px;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+				<div class="{style.tabContainer}">		
+						<g:HorizontalPanel ui:field='tabPanel'/>
+				</div>
+				<div class="{style.mainContainer}">		
+						<g:VerticalPanel ui:field='mainPanel'/>
+				</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

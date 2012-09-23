@@ -1,0 +1,108 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	
+    <ui:with field='res' type='com.owb.playhelp.client.resources.Resources'/>
+    
+	<ui:style src="../resources/GlobalStyles.css">	
+		.logoutLink {
+			float: left;
+			margin-left: 10px;
+		}	
+		.username {
+			text-align: left;
+		}
+		.profilePicture {
+			margin-left: 20px;
+			text-align: left;
+		}		
+		.karmaDiv {
+			float: left;
+			margin-top: 5px; 
+			width: 50px;
+		}
+		table {
+			font: 11px/24px Verdana, Arial, Helvetica, sans-serif;
+			font-style:bold;
+			border-collapse: collapse;
+			width: 220px;
+			}
+		
+		th {
+			padding: 0 0.5em;
+			text-align: left;
+			}
+		
+		tr.yellow td {
+			background: #FFC;
+			font-style:bold;
+			}
+		
+		tr {
+			height:10px;
+			}
+		td {
+			}
+		
+		td.width {
+			width: 90px;
+			}
+		
+		td.adjacent {
+			text-align: left;
+			height:10px;
+			}
+
+		
+	</ui:style>
+	
+	<g:HTMLPanel>
+	  <table width="2">
+	    <tr class="yellow">
+		    <td class="width">
+		    	<g:Image ui:field='profilePicture' width="92px" height="150px" resource='{res.owbLogo}' altText="Profile Picture"/>
+		    </td>
+		    <td class="adyacent">
+		      4 Projects <br/>
+		      5 Children <br/>
+		      $650 <br/>
+		    </td>
+		</tr>
+		<tr>
+		    <td colspan="2">
+		    	<g:Label styleName='{style.username}' ui:field='userNameLabel'>Loading Name...</g:Label>
+		    </td>
+		</tr>
+		<tr>
+		    <td colspan="2">
+		    	<g:Label styleName='{style.username}' ui:field='userEmailLabel'>Loading Email...</g:Label>
+		    </td>
+		</tr>
+		<tr>
+		    <td colspan="2">
+		    	<g:Label styleName='{style.username}' ui:field='userTypeLabel'>Loading Type...</g:Label>
+		    </td>
+		</tr>
+		<tr>
+		    <td>
+				<g:Anchor href='javascript:;' ui:field='loginout'>login</g:Anchor>
+			</td>
+		    <td class="adyacent">
+		 		<g:Anchor href='javascript:;' ui:field='preferences'>preferences</g:Anchor>
+			</td>
+		</tr>
+		<tr>
+		    <td>
+		    	<g:Image ui:field='socialIcons' width="100px" height="30px" resource='{res.socialIcons}' altText="Social Icons" />
+		    </td>
+		    <td class="adyacent">
+		    </td>
+		</tr>
+      </table>
+      
+	   	<div class="{style.karmaDiv}">
+			<g:VerticalPanel ui:field='karmaPanel' horizontalAlignment="ALIGN_RIGHT">
+			</g:VerticalPanel>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

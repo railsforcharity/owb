@@ -1,0 +1,172 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" 
+	xmlns:app='urn:import:com.owb.playhelp.client'
+	xmlns:owb='urn:import:com.owb.playhelp.client.view'>
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		.topBar {
+			float: right;
+			margin-top: 5px; 
+			height : "59px";
+			width : "345px";
+		}
+		.leftContainer {
+			padding: 0 11px;
+		}
+		.profileContainer {
+			float: right;
+			margin-top: 5px; 
+			width: 180px;
+			horizontalAlignment: "ALIGN_RIGHT";
+		}
+		.menuContainer {
+			float: right;
+			margin-top: 5px; 
+			width: 180px;
+			horizontalAlignment: "ALIGN_RIGHT";
+		}
+		.style-MenuBar
+		{
+		    margin                      :   0 auto;
+		    background-color            :   #fff;
+		    font-size                   :   70%;
+		    padding                     :   3px;
+		    width    					: 	522px;
+		}
+		.style-MenuBar table
+		{
+		    border-collapse             :   separate;
+		    background-color            :   #fff;
+		}
+		.style-MenuBar .gwt-MenuItem
+		{
+		
+		    cursor                      :   hand;
+		    cursor                      :   pointer;
+		
+		    background-color            :   #fff;
+		    padding                     :   2px 10px;
+		}
+		.style-MenuBar .gwt-MenuItem-selected
+		{
+		    background-color            :   #fff;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<table>
+		<tr>
+		    <div class="{style.topBar}"><g:HorizontalPanel ui:field='barPanel'/></div>
+		</tr>
+		<tr>
+	  		<div class='{style.style-MenuBar}'>
+	  		<g:MenuBar ui:field='actionPanel' vertical="false">
+				<g:MenuItem ui:field='ngoItem'>Organization
+			         <g:MenuBar vertical="true">
+      					<g:MenuItem ui:field='addNgoItem'>Add</g:MenuItem>
+     				</g:MenuBar>
+			    </g:MenuItem>
+			    <g:MenuItem ui:field='orphanageItem'>Orphanages
+			         <g:MenuBar vertical="true">
+      					<g:MenuItem ui:field='addOrphanageItem'>Add</g:MenuItem>
+     				</g:MenuBar>
+     			</g:MenuItem>
+			    <g:MenuItem ui:field='friendItem'>Friends
+			         <g:MenuBar vertical="true">
+      					<g:MenuItem>You will be able to make Friends with common interests</g:MenuItem>
+     				</g:MenuBar>
+			    </g:MenuItem>
+			    <g:MenuItem ui:field='avatarItem'>Avatar
+			         <g:MenuBar vertical="true">
+      					<g:MenuItem>You will be able to handle your Avatar</g:MenuItem>
+     				</g:MenuBar>
+			    </g:MenuItem>
+			    <g:MenuItem ui:field='mediaItem'>Media
+			         <g:MenuBar vertical="true">
+      					<g:MenuItem>You will be able to include pictures, videos and find them in the Map</g:MenuItem>
+     				</g:MenuBar>
+			    </g:MenuItem>
+			    <g:MenuItem ui:field='filterItem'>Filters
+			         <g:MenuBar vertical="true">
+      					<g:MenuItem>No Filter is added to the Map</g:MenuItem>
+     				</g:MenuBar>
+			    </g:MenuItem>
+			    <g:MenuItem ui:field='shareItem'>Share
+			         <g:MenuBar vertical="true">
+      					<g:MenuItem>You will be able to share information using Google+, Facebook, LinkedIn,...</g:MenuItem>
+     				</g:MenuBar>
+			    </g:MenuItem>
+			<!--     <g:MenuItem ui:field='ngoItem'>Organization
+			         <g:MenuBar vertical="true">
+      					<g:MenuItem>Find</g:MenuItem>
+      					<g:MenuItem>Follow</g:MenuItem>
+      					<g:MenuItem ui:field='addNgoItem'>Add</g:MenuItem>
+    				   	<g:MenuItem>Delete</g:MenuItem>
+       					<g:MenuItem>Report Abuse</g:MenuItem>
+       					<g:MenuItem>Show</g:MenuItem>
+     				</g:MenuBar>
+			    </g:MenuItem>
+			    <g:MenuItem ui:field='orphanageItem'>Orphanages
+			         <g:MenuBar vertical="true">
+      					<g:MenuItem>Find</g:MenuItem>
+      					<g:MenuItem>Follow</g:MenuItem>
+      					<g:MenuItem>Add Orphanage</g:MenuItem>
+    				   	<g:MenuItem>Delete Orphanage</g:MenuItem>
+      					<g:MenuItem>Add Need</g:MenuItem>
+    				   	<g:MenuItem>Delete Need</g:MenuItem>
+      					<g:MenuItem ui:field='addProjectField'>Add Project</g:MenuItem>
+    				   	<g:MenuItem>Delete Project</g:MenuItem>
+       					<g:MenuItem>Report Abuse</g:MenuItem>
+       					<g:MenuItem>Show Needs</g:MenuItem>
+       					<g:MenuItem>Hide Projects</g:MenuItem>
+       					<g:MenuItem>Show Achievements</g:MenuItem>
+     				</g:MenuBar>
+     			</g:MenuItem>
+			    <g:MenuItem ui:field='friendItem'>Friends
+			         <g:MenuBar vertical="true">
+      					<g:MenuItem>Find</g:MenuItem>
+      					<g:MenuItem>Organize</g:MenuItem>
+      					<g:MenuItem>Show</g:MenuItem>
+     				</g:MenuBar>
+			    </g:MenuItem>
+			    <g:MenuItem ui:field='avatarItem'>Avatar
+			         <g:MenuBar vertical="true">
+      					<g:MenuItem>Organize</g:MenuItem>
+      					<g:MenuItem>Show</g:MenuItem>
+     				</g:MenuBar>
+			    </g:MenuItem>
+			    <g:MenuItem ui:field='mediaItem'>Media
+			         <g:MenuBar vertical="true">
+      					<g:MenuItem>Find</g:MenuItem>
+      					<g:MenuItem>Add</g:MenuItem>
+    				   	<g:MenuItem>Delete</g:MenuItem>
+       					<g:MenuItem>Report</g:MenuItem>
+       					<g:MenuItem>Hide Picture</g:MenuItem>
+       					<g:MenuItem>Show Video</g:MenuItem>
+     				</g:MenuBar>
+			    </g:MenuItem>
+			    <g:MenuItem ui:field='filterItem'>Filters
+			         <g:MenuBar vertical="true">
+      					<g:MenuItem>Add Filter</g:MenuItem>
+      					<g:MenuItem>Highlight</g:MenuItem>
+      					<g:MenuItem>Hide Fernando Riqueno</g:MenuItem>
+      					<g:MenuItem>Hightlight Save The Children</g:MenuItem>
+      					<g:MenuItem>Hide Projects of less than $10</g:MenuItem>
+     				</g:MenuBar>
+			    </g:MenuItem>
+			    <g:MenuItem ui:field='shareItem'>Share
+			         <g:MenuBar vertical="true">
+      					<g:MenuItem>Organize</g:MenuItem>
+      					<g:MenuItem>Facebook: New Contribuitions</g:MenuItem>
+      					<g:MenuItem>LinkedIn: New Contribuitions</g:MenuItem>
+      					<g:MenuItem>Google+: All</g:MenuItem>
+     				</g:MenuBar>
+			    </g:MenuItem> -->
+	 		 </g:MenuBar>
+	 		 </div>
+	    </tr>
+		</table>
+	</g:HTMLPanel>
+</ui:UiBinder> 

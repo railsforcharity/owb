@@ -1,0 +1,18 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		.loading {
+			width: 100%;
+			padding: 55px ;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		Project List View
+			<g:Label ui:field='loadingLabel' styleName='{style.loading}'>Loading...</g:Label>
+		<g:FlexTable ui:field='contributionsTable' />
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,43 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		.style-MenuBar
+		{
+		    margin                      :   0 auto;
+		    background-color            :   #eee;
+		    font-size                   :   70%;
+		}
+		.style-MenuBar table
+		{
+		    border-collapse             :   separate;
+		    background-color            :   #21e339;
+		}
+		.style-MenuBar .gwt-MenuItem
+		{
+		
+		    cursor                      :   hand;
+		    cursor                      :   pointer;
+		
+		    border                      :   1px solid #999;
+		    background-color            :   #eee;
+		    padding                     :   2px 10px;
+		}
+		.style-MenuBar .gwt-MenuItem-selected
+		{
+		    background-color            :   #fff;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+	  <div class='{style.style-MenuBar}'>
+	  <g:MenuBar ui:field='mainMenu' vertical="false">
+		    <g:MenuItem ui:field='homeLink'>Home</g:MenuItem>
+		    <g:MenuItem ui:field='listLink'>List</g:MenuItem>
+		    <g:MenuItem ui:field='searchLink'>Search</g:MenuItem>
+	  </g:MenuBar>
+	  </div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

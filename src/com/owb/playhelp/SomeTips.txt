@@ -1,0 +1,25 @@
+How to delete all datastore in Google App Engine?
+http://stackoverflow.com/questions/1062540/how-to-delete-all-datastore-in-google-app-engine
+
+If you're talking about the live datastore, open the dashboard for your app (login on appengine) then datastore --> dataviewer, select all the rows for the table you want to delete and hit the delete button (you'll have to do this for all your tables). You can do the same programmatically through the remote_api (but I never used it.)
+
+If you're talking about the development datastore, you'll just have to delete the following file: "./WEB-INF/appengine-generated/local_db.bin". The file will be generated for you again next time you run the development server and you'll have a clear db.
+
+Make sure to clean your project afterwards.
+
+This is one of the little gotchas that come in handy when you start playing with the Google Application Engine. You'll find yourself persisting objects into the datastore then changing the JDO object model for your persistable entities ending up with a obsolete data that'll make your app crash all over the place.
+
+---------------------------------------------------------------------------
+I did a lot the following error at the beginning and is related with the services...
+
+[ERROR] [owb] - com.google.gwt.user.client.rpc.StatusCodeException: 404 <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<title>Error 404 NOT_FOUND</title>
+</head>
+<body><h2>HTTP ERROR 404</h2>
+<p>Problem accessing /owb/OrphanageService. Reason:
+<pre>    NOT_FOUND</pre></p><hr /><i><small>Powered by Jetty://</small></i><br/>                                                
+
+(1) Register your service at web.xml
+(2) The name of the service in [@RemoteServiceRelativePath("service_name")] must match the one in the web.xml file

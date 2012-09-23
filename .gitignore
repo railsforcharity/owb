@@ -1,0 +1,9 @@
+test
+test-classes
+upload
+war/owb/
+war/WEB-INF/deploy/
+war/WEB-INF/classes/
+war/WEB-INF/appengine-generated/
+war/WEB-INF/appengine-web.xml
+war/WEB-INF/logging.properties

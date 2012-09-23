@@ -1,0 +1,20 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.important {
+			font-weight: bold;
+		}
+		.loading {
+			width: 100%;
+			padding: 55px ;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<g:HorizontalPanel ui:field='mainPanel'>
+			<g:Label ui:field='nameLabel' styleName='{style.loading}'>Project Information </g:Label>
+			<g:Label ui:field='descLabel' styleName='{style.loading}'>Loading...</g:Label>
+		    <g:Anchor href='javascript:;' ui:field='contributeLink'>Contribute</g:Anchor>
+		</g:HorizontalPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

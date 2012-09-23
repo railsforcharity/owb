@@ -1,0 +1,55 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="../../resources/GlobalStyles.css" >
+		.important {
+			font-weight: bold;
+		}
+	</ui:style>
+	<g:HTMLPanel ui:field="mainPanel">
+		<div class="{style.formTitle}"><g:Label ui:field="ngoName" /></div>
+		<div class="{style.formTitle}"><g:Label ui:field="warningMsg"/></div>
+		<div class="{style.formwrapper}">
+			<div class="{style.formlabel}">
+				<g:Label >Description:</g:Label>
+			</div>
+			<div class="{style.formfield}">
+				<g:Label ui:field="ngoDescription" />
+			</div>
+		</div>
+		<div class="{style.formwrapper}">
+			<div class="{style.formlabel}">
+				<g:Label >Address:</g:Label>
+			</div>
+			<div class="{style.formfield}">
+				<g:Label ui:field="ngoAddress" />
+			</div>
+		</div>
+		<div class="{style.formwrapper}">
+			<div class="{style.formlabel}">
+				<g:Label >Phone:</g:Label>
+			</div>
+			<div class="{style.formfield}">
+				<g:Label ui:field="ngoPhone" />
+			</div>
+		</div>
+		<div class="{style.formwrapper}">
+			<div class="{style.formlabel}">
+				<g:Label >Email:</g:Label>
+			</div>
+			<div class="{style.formfield}">
+				<g:Label ui:field="ngoEmail" />
+			</div>
+		</div>
+		<div class='{style.button}'>
+			<g:Anchor href='javascript:;' ui:field='editBut'>Edit</g:Anchor>
+			<g:Anchor href='javascript:;' ui:field='removeBut'>Remove</g:Anchor>
+			<g:Anchor href='javascript:;' ui:field='reportBut'>Report Abuse</g:Anchor>
+			<g:Anchor href='javascript:;' ui:field='joinBut'>Join</g:Anchor>
+			<g:Anchor href='javascript:;' ui:field='followBut'>Follow</g:Anchor>
+			<g:Anchor href='javascript:;' ui:field='recommendBut'>Recommend</g:Anchor>
+			<g:Anchor href='javascript:;' ui:field='confirmBut'>Confirm</g:Anchor>
+			<g:Anchor href='javascript:;' ui:field='fulldescBut'>Full Description</g:Anchor>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

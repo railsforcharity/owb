@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='owb'>
+  <!-- Inherit the core Web Toolkit stuff.                        -->
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name="com.google.gwt.resources.Resources" />
+
+  <!-- Inherit the default GWT style sheet.  You can change       -->
+  <!-- the theme of your GWT application by uncommenting          -->
+  <!-- any one of the following lines.                            -->
+  <inherits name='com.google.gwt.user.theme.standard.Standard'/>
+  <!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
+  <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
+
+  <!-- Other module inherits                                      -->
+  <inherits name="com.google.gwt.activity.Activity"/>
+  <inherits name="com.google.gwt.place.Place"/>
+
+  <!-- Use ClientFactoryImpl by default -->
+  <replace-with class="com.owb.playhelp.client.hellomvp.clientmvp.ClientFactoryImpl">
+  <when-type-is class="com.owb.playhelp.client.hellomvp.clientmvp.ClientFactory"/>
+  </replace-with>
+  
+  <!--  Upload Library: see http://code.google.com/p/gwtupload/wiki/GwtUpload_GettingStarted 
+  <inherits name="gwtupload.GWTUpload"/>
+  <stylesheet src="Upload.css"/>-->
+  <servlet class="com.owb.playhelp.server.servlets.FileUploadServlet" path="/upload" /> 
+  
+  <!--  GWT-MAP library -->
+  <inherits name='com.google.gwt.maps.GoogleMaps' />
+  
+  <!-- Specify the app entry point class.                         -->
+  <entry-point class='com.owb.playhelp.client.Owb'/>
+
+  <!-- Specify the paths for translatable code                    -->
+  <source path='client'/>
+  <source path='shared'/>  
+
+</module>

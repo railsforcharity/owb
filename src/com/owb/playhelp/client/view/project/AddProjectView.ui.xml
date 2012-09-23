@@ -1,0 +1,39 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="../../resources/GlobalStyles.css" >
+	</ui:style>
+	<g:HTMLPanel>
+	        <div class="{style.formTitle}">Project Information</div>
+			<div class="{style.formwrapper}">
+				<div class="{style.formlabel}">
+					<g:Label >Name:</g:Label>
+				</div>
+				<div class="{style.formfield}">
+					<g:TextBox ui:field='nameField' width="25em">Your organization name</g:TextBox>
+				</div>
+			</div>
+			<div class="{style.formwrapper}">
+				<div class="{style.formlabel}">
+					<g:Label >Description:</g:Label>
+				</div>
+				<div class="{style.formfield}">
+					<g:TextArea ui:field='descField' width="25em" height="25em">Write a brief description of this project</g:TextArea>
+				</div>
+			</div>
+			
+			<div class="{style.formwrapper}">
+				<div class="{style.formlabel}">
+					<g:Label >Website:</g:Label>
+				</div>
+				<div class="{style.formfield}">
+					<g:TextBox ui:field='webField' width="25em">http://www.YOURURLPROJECT.org/</g:TextBox>
+				</div>
+			</div>
+		<div class='{style.button}'>
+			<g:Anchor href='javascript:;' ui:field='saveBut'>Save</g:Anchor>
+			<g:Anchor href='javascript:;' ui:field='cancelBut'>Cancel</g:Anchor>
+		</div>
+		<div ui:field='nameDiv' />
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,59 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="../resources/GlobalStyles.css">	
+		.menuLink {
+			float: right;
+			margin-left: 10px;
+		}	
+		.important {
+			font-weight: bold;
+		}
+		.container {
+			width: 300px;
+		}
+		.style-MenuBar
+		{
+		    border                      :   1px solid #666;
+		    margin                      :   0 auto;
+		    background-color            :   #eee;
+		    font-size                   :   70%;
+		    padding                     :   3px;
+		}
+		.style-MenuBar table
+		{
+		    border-collapse             :   separate;
+		    border                      :   1px solid #00f;
+		    background-color            :   #ddd;
+		}
+		.style-MenuBar .gwt-MenuItem
+		{
+		
+		    cursor                      :   hand;
+		    cursor                      :   pointer;
+		
+		    border                      :   1px solid #999;
+		    background-color            :   #eee;
+		    padding                     :   2px 10px;
+		}
+		.style-MenuBar .gwt-MenuItem-selected
+		{
+		    background-color            :   #fff;
+		}
+		
+		
+	</ui:style>
+	<g:HTMLPanel>
+	  <div class='{style.style-MenuBar}'>
+	  <g:MenuBar ui:field='mainMenu' vertical="true">
+		    <g:MenuItem ui:field='homeLink'>Home</g:MenuItem>
+		    <g:MenuItem ui:field='friendLink'>Friends</g:MenuItem>
+		    <g:MenuItem ui:field='projectLink'>Projects</g:MenuItem>
+		    <g:MenuItem ui:field='chapterLink'>Chapters</g:MenuItem>
+		    <g:MenuItem ui:field='ngoLink'>Non-Profits</g:MenuItem>
+		    <g:MenuItem ui:field='orphanageLink'>Orphanages</g:MenuItem>
+		    <g:MenuItem ui:field='moreLink'>More</g:MenuItem>
+	  </g:MenuBar>
+	  </div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

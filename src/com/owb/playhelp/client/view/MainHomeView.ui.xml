@@ -1,0 +1,57 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"	
+	xmlns:gm="urn:import:com.google.gwt.maps.client">
+	<ui:style>
+		.mapStyle {
+			width:       "600px";
+			height:      "600px";
+		}
+		.titlePanStyle {
+			font-weight: bold;			
+		}
+		.filterPanStyle {
+			width:       "100px";			
+		}
+		.showPanStyle {
+			width:       "100px";
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		 <g:HorizontalPanel>
+		 	<!-- <g:cell horizontalAlignment="ALIGN_CENTER" verticalAlignment="ALIGN_MIDDLE"> --> 
+			<g:HorizontalPanel ui:field='mapPanel' styleName="{style.mapStyle}" /> 
+		 	<!-- 
+		 	<script src="http://maps.google.com/maps?gwt=1&amp;file=api&amp;v=2&amp;sensor=false;key=MYKEY" />
+		 	or in owb.html
+		 	<script src="http://maps.google.com/maps?file=api&v=2&key=MYKEY" type="text/javascript"></script>
+		 	
+		 	<g:VerticalPanel>
+		 		<g:VerticalPanel>
+		 	  		<g:Label styleName='{style.titlePanStyle}'>LABELS</g:Label>
+		 		    <g:VerticalPanel styleName="{style.showPanStyle}">
+		 	  			<g:CheckBox ui:field='filterNgo' text='NGO' />
+		 	  			<g:CheckBox ui:field='filterOrphanage' text='Orphanages' />
+		 	  			<g:CheckBox ui:field='filterNeeds' text='Needs' />
+		 	  			<g:CheckBox ui:field='filterProjects' text='Projects' />
+		 	  			<g:CheckBox ui:field='filterAchievemetns' text='Achievements' />
+		 	  			<g:CheckBox ui:field='filterFriends' text='Friends' />
+		 	  			<g:CheckBox ui:field='filterPictures' text='Pictures' />
+		 	  			<g:CheckBox ui:field='filterVideos' text='Videos' />
+		 			</g:VerticalPanel>
+		 		</g:VerticalPanel>
+		 		<g:VerticalPanel>
+		 	  		<g:Label styleName='{style.titlePanStyle}'>FILTERS</g:Label>
+		 			<g:VerticalPanel styleName="{style.filterPanStyle}">
+		 	  			<g:CheckBox ui:field='showNgo' text='NGO' />
+		 	  			<g:Anchor href='javascript:;' ui:field='addNgoFilt'>+ Add</g:Anchor>
+		 	  			<g:CheckBox ui:field='showOrphanage' text='Orphanages' />
+		 	  			<g:Anchor href='javascript:;' ui:field='addOrphanageFilt'>+ Add</g:Anchor>
+		 	  			<g:CheckBox ui:field='showFriends' text='Friends' />
+		 	  			<g:Anchor href='javascript:;' ui:field='addFriendfilt'>+ Add</g:Anchor>
+		 			</g:VerticalPanel>
+		 		</g:VerticalPanel>
+		 	</g:VerticalPanel> -->
+		</g:HorizontalPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 
