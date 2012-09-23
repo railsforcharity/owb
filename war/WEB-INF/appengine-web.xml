@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+  <application>karmagochi</application>
+  <version>1</version>
+
+  <!-- Configure serving/caching of GWT files -->
+  <static-files>
+    <include path="**" />
+
+    <!-- The following line requires App Engine 1.3.2 SDK -->
+    <include path="**.nocache.*" expiration="0s" />
+
+    <include path="**.cache.*" expiration="365d" />
+    <exclude path="**.gwt.rpc" />
+  </static-files>
+  
+	<sessions-enabled>true</sessions-enabled>
+
+  <!-- Configure java.util.logging -->
+  <system-properties>
+    <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
+  </system-properties>
+
+	<inbound-services>
+		<service>xmpp_message</service>
+	</inbound-services>
+  
+	<admin-console>
+		<!-- <page name="feed update" url="/feedupdate?num=1&amp;max=100" />
+		<page name="enable receipt of xmpp news items" url="/xmpprequest?request=add" />
+		<page name="disable receipt of xmpp news items" url="/xmpprequest?request=remove" /> -->
+	</admin-console>
+
+
+</appengine-web-app>
