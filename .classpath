@@ -10,5 +10,6 @@
 	<classpathentry kind="lib" path="/home/mcharcos/Workbenchs/owb_workbench/owb/src/libs/commons-fileupload-1.2.2.jar"/>
 	<classpathentry kind="lib" path="/home/mcharcos/Workbenchs/owb_workbench/owb/src/libs/commons-io-1.3.2.jar"/>
 	<classpathentry kind="lib" path="/home/mcharcos/Workbenchs/owb_workbench/owb/src/libs/gwt-maps.jar"/>
+	<classpathentry kind="lib" path="/home/mcharcos/Workbenchs/owb_workbench/owb/src/libs/appengine-api-labs-1.4.3.jar"/>
 	<classpathentry kind="output" path="war/WEB-INF/classes"/>
 </classpath>
