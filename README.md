@@ -13,8 +13,8 @@ Installation
 ============
 1. Clone this repository.
 2. Install Eclipse
-3. Open eclipse and browse to Help > Install New Software > Put the url http://dl.google.com/eclipse/plugin/<version>
-   Replace the <version> with whatever eclipse version that you have.
+3. Open eclipse and browse to Help > Install New Software > Put the url http://dl.google.com/eclipse/plugin/(version)
+   Replace the (version) with whatever eclipse version that you have.
 4. Type 'Google' in the search term and select
    a. Developer Tools
    b. Google plugin for eclipse
