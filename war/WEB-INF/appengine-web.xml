@@ -15,6 +15,7 @@
   </static-files>
   
 	<sessions-enabled>true</sessions-enabled>
+	<threadsafe>true</threadsafe>
 
   <!-- Configure java.util.logging -->
   <system-properties>
